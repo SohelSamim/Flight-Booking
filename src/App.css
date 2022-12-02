@@ -1,0 +1,311 @@
+body {
+  font-family: "Nunito Sans", sans-serif;
+}
+.navbar {
+  padding: 1.5rem !important;
+}
+nav .bg-light {
+  height: 60px;
+  border-radius: 10px;
+  padding: 0rem 3rem !important;
+}
+nav .navbar-brand {
+  font-size: 25px;
+  font-weight: 900;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+nav .navbar-brand svg {
+  width: 30px;
+  margin-right: 10px;
+  fill: #4657f0;
+}
+main {
+  height: 90vh;
+  background: url("https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+main::after {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background: rgba(0, 0, 0, 0.4);
+  content: "";
+}
+main > div {
+  position: relative;
+  z-index: 1;
+}
+main > div h1 {
+  color: #fff;
+  font-size: 80px;
+  font-weight: 800;
+}
+
+main > div p {
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 1rem;
+}
+main > div a {
+  text-transform: uppercase;
+  width: 190px;
+  margin-top: 1rem;
+  font-weight: 700 !important;
+}
+main > div a:hover {
+  background-color: #4657f0 !important;
+  color: #fff !important;
+}
+.offer_area {
+  padding: 5rem 0rem !important;
+}
+.offer_area > h1 {
+  color: #1d2a3b;
+  font-size: 50px;
+  font-weight: 800;
+  margin-bottom: 6rem;
+  position: relative;
+}
+.offer_area > h1::after {
+  position: absolute;
+  left: 50%;
+  bottom: -20px;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 6px;
+  background: #4657f0;
+  content: "";
+}
+.offer_area .card img {
+  height: 500px;
+  object-fit: cover;
+}
+.badge {
+  color: #4657f0;
+  background: rgba(70, 87, 240, 0.1);
+}
+.Benefit .row h1 {
+  font-size: 40px;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+.Benefit .row p {
+  margin-bottom: 1rem;
+  font-size: 18px;
+}
+
+.carousel-item > img {
+  height: 800px;
+  object-fit: cover;
+}
+
+.SearchBarWrapper {
+  background: rgba(70, 87, 240, 0.1);
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 24rem;
+}
+.SearchBarWrapper h1 {
+  font-weight: 800;
+  font-size: 70px;
+  margin-bottom: 2rem;
+  color: #1d2a3b;
+}
+.SearchBarWrapper .button {
+  grid-column: span 2;
+  background-color: #4657f0;
+}
+.card_custom {
+  display: grid;
+  width: 850px;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+.react-datepicker-wrapper {
+  border: 1px solid #ddd !important;
+  border-radius: 4px;
+
+  padding-top: 2px !important;
+  padding-left: 13px !important;
+  font-size: 14px;
+}
+.react-datepicker__header {
+  background: rgba(70, 87, 240, 0.1) !important;
+}
+.react-datepicker {
+  border: none !important;
+}
+.react-datepicker-popper[data-placement^="bottom"]
+  .react-datepicker__triangle::before,
+.react-datepicker-popper[data-placement^="bottom"]
+  .react-datepicker__triangle::after {
+  border-block-color: rgba(70, 87, 240, 0.1) !important;
+}
+.react-datepicker__tab-loop {
+  position: absolute !important;
+}
+.react-datepicker__input-container {
+  min-height: 100%;
+}
+.react-datepicker-wrapper input {
+  width: 100%;
+  outline: none;
+  height: 35px;
+  cursor: pointer;
+}
+
+/* search_result_area */
+.search_result_area {
+  padding-top: 20rem;
+  width: 850px;
+  padding-bottom: 4rem;
+}
+.search_result_area h1 {
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 5rem;
+}
+.search_result_area .card_header {
+  background: #4657f0 !important;
+  box-shadow: none !important;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #fff;
+}
+.search_result_area button {
+  width: 100%;
+  background-color: #4657f0;
+}
+.grid_search {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 3rem;
+}
+.search_result_area .book_button {
+  background: rgba(70, 87, 240, 0.1);
+  color: #1d2a3b !important;
+}
+
+.FormPer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+.FormPer h1 {
+  grid-column: span 2;
+  margin-bottom: 10px;
+}
+.search_result_area_new > * + * {
+  margin-top: 2rem;
+}
+.search_result_area_new button:disabled {
+  opacity: 0.5;
+}
+.details_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  margin-bottom: 20px;
+}
+.details_grid > * {
+  margin-bottom: 0px !important;
+}
+.details_grid > *:first-child {
+  grid-column: span 2;
+  font-weight: 600;
+  font-size: 20px;
+  color: #000;
+}
+.details_grid * {
+  text-align: left !important;
+}
+
+.App.black .container.bg-light {
+  background-color: #132f4c !important;
+}
+.App.black .navbar-light .navbar-brand,
+.App.black .offer_area > h1 {
+  color: #fff;
+}
+.App.black {
+  background-color: #011e3c;
+}
+
+.App.black .card {
+  background-color: #132f4c !important;
+}
+.App.black .card-body {
+  color: #fff;
+}
+.App.black .badge {
+  background-color: #fff;
+}
+.App.black .offer_area > h1,
+.App.black .Benefit .row h1,
+.App.black .Benefit .row p {
+  color: #fff;
+}
+
+.App.black .SearchBarWrapper h1 {
+  color: #fff;
+}
+.App.black .search_result_area h1 {
+  color: #fff;
+}
+.App.black .FormPer input {
+  color: #fff;
+}
+
+@media screen and (max-width: 1100px) {
+  main > div h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+  main > div p {
+    font-size: 15px;
+  }
+  .offer_area > h1,
+  .Benefit .row h1 {
+    font-size: 30px;
+  }
+  .jumbo h1 {
+    font-size: 35px !important;
+    text-align: center;
+  }
+  .jumbo p {
+    font-size: 18px !important;
+    text-align: center;
+  }
+  .carousel-item > img {
+    height: 400px;
+  }
+  nav .navbar-brand {
+    font-size: 15px;
+  }
+  .navbar {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+  nav .bg-light {
+    height: unset;
+    border-radius: 5px !important;
+    min-height: 40px;
+    padding: 0rem 1.5rem !important;
+  }
+  .navbar-light .navbar-toggler {
+    outline: none;
+    box-shadow: none;
+  }
+}
