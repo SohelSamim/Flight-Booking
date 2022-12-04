@@ -15,7 +15,6 @@ const FlightCard = ({ EachFlight }: any) => {
     console.log(EachFlight);
   }, [EachFlight]);
   return (
-    // This is flight cards and the content is dynamic getting from the api
     <Card className="w-full">
       <CardHeader className="relative h-28 flex card_header justify-center items-center">
         Fligthers
